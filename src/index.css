@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#root {
+  --main-theme-color:  rgb(77, 77, 234);
+  /* --main-theme-color: rgb(246, 82, 0); */
+  --box-shadow-desktop: 0.2rem 0.2rem 0.8rem rgb(177, 171, 171);
+  --version-text-color: rgb(51, 46, 46);
+  --sections-background-color:  rgb(243, 243, 243);
+  --main-content-color: rgb(98, 96, 96);
+  --box-shadow-mobile: 0 0.15rem 0.8rem rgb(177, 171, 171);
+  --border-line-style: 0.1rem solid rgb(228, 228, 228);
+}
+
+

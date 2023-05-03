@@ -1,4 +1,21 @@
-.App {
+html {
+  font-size: 18px;
+}
+
+.main-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-container {
+    font-size: 12px;
+    flex-direction: column-reverse;
+  }
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -36,4 +53,4 @@
   100% {
     transform: translateY(0px);
   }
-}
+} */

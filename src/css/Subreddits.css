@@ -1,0 +1,120 @@
+.subreddits-loading {
+    width: 25%;
+}
+
+.subreddits-container {
+    width: 25%;
+    box-shadow: var(--box-shadow-desktop);
+    border-radius: 0.35rem;
+}
+
+.subreddits-container h2 {
+    margin: 2rem 2rem;;
+}
+
+.subreddit-list {
+    list-style: none;
+    margin: 1.5rem auto;
+}
+
+.subreddit-list button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subreddit-icon {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.8rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    #subreddits-column {
+        padding: 0;
+    }
+
+    .subreddit-list button {
+        margin-left: 1rem;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .subreddits-container {
+        width: 30%;
+        margin-left: 1rem;
+    }
+
+    .subreddits-container h2 {
+        margin-left: 1.5rem;
+        font-size: 1.25rem;
+    }
+
+    .subreddit-list button {
+        margin-left: 0.3rem;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    .subreddit-icon {
+        width: 1.7rem;
+        height: 1.7rem;
+        margin: 0 0.5rem;
+    }    
+}
+
+@media only screen and (max-width: 600px) {
+    .subreddits-container {
+        width: 97%;
+        margin: 0.9rem auto;
+        box-shadow: var(--box-shadow-mobile);
+    }
+
+    .subreddits-container h2 {
+        margin: 1rem 1.3rem;
+        font-size: 1rem;
+    }
+
+    #subreddits-column {
+        width: 100%;
+        margin-top: 0;
+        height: 13rem;
+        display: inline-flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        overflow: scroll hidden;
+        scroll-behavior: smooth;
+    }
+
+    #subreddits-column::-webkit-scrollbar {
+        display: none;
+    }
+
+    .subreddit-list {
+        width: min-content;
+        margin: 0.5rem 0.2rem;
+    }
+
+    .subreddit-list button {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subreddit-icon {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .subreddit-list button span{
+        margin-top: 0.25rem;
+        font-size: 0.5rem;
+    }
+}
+
+
