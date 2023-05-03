@@ -67,7 +67,7 @@ export const Reddits = () => {
                                 {reddit.localVote===1 ? <TiArrowUpThick className='active-arrow-icon'/> : <TiArrowUpOutline className="arrow-icon"/>}
                             </button>
                                 <h4 className={`${getVoteType(reddit.localVote)}votes-number`}>
-                                    {numTransform(reddit.ups - reddit.downs + (reddit.localVote))}
+                                    {numTransform(reddit.ups - reddit.downs + (reddit.localVote), 1)}
                                 </h4>
                             <button 
                                 className={`${reddit.localVote? 'active-' : ''}down-votes`}
